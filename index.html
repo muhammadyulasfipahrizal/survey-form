@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>https://survey-form.freecodecamp.rocks</title>
+</head>
+<body>
+        <!-- BODY TITLE -->
+        <section>
+            <h1 id="title">freeCodeCamp Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </section>
+        <!-- FORM -->
+        <section>
+            <form action="#" id="survey-form">
+                <!-- name email age and role -->
+                <fieldset>
+                    <label for="name-label" id="name-label">
+                        Name <input type="text" id="name" placeholder="Enter your name" required>
+                    </label>
+                    <label for="email-label" id="email-label">
+                        Email <input type="email" id="email" placeholder="Enter your email" required>
+                    </label>
+                    <label for="number-label" id="number-label">
+                        Age (optional) <input type="number" id="number" placeholder="Age" min="12" max="120">
+                    </label> 
+                    <label for="dropdown-label">
+                        Which option best describes your current role?
+                        <select name="dropdown" id="dropdown">
+                            <option value="0">Select current role</option>
+                            <option value="1">Full time job</option>
+                            <option value="2">Full time learner</option>
+                            <option value="3">Other</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <!-- recomend and favorite feature section -->
+                <fieldset>
+                    <label for="recomend-label" id="recomend-label">
+                        Would you recommend freeCodeCamp to a friend? 
+                        <input class="inline" value="1" type="radio" name="recomend">Definitely </input>
+                        <input class="inline" value="2" type="radio" name="recomend">Maybe </input>
+                        <input class="inline" value="3" type="radio" name="recomend">Not sure </input>
+                    </label>
+                    <label for="favorite-label">
+                        What is your favorite feature of freeCodeCamp?
+                        <select name="favorite" id="favorite">
+                            <option value="0">Select an option</option>
+                            <option value="1">Challanges</option>
+                            <option value="2">Projects</option>
+                            <option value="3">Community</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <!-- checkbox and comment section -->
+                <fieldset>
+                    <label for="checkbox">
+                        What would you like to see improved? (Check all that apply)
+                        <input class="inline" type="checkbox" value="0">Front-end
+                        <input class="inline" type="checkbox" value="0">Back-end
+                        <input class="inline" type="checkbox" value="0">Data-visualization
+                        <input class="inline" type="checkbox" value="0">Challanges
+                        <input class="inline" type="checkbox" value="0">Forum
+                    </label>
+                    <label for="comment">
+                        Any comments or suggestions?
+                        <textarea name="comment" id="comment" cols="50" rows="8" placeholder="Enter your comment here"></textarea>
+                    </label>
+                </fieldset>
+                <!-- submit button -->
+                    <input type="submit" value="submit" id="submit">
+            </form>
+        </section>
+</body>
+</html>
